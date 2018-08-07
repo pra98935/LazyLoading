@@ -7,13 +7,15 @@ const routes: Routes = [
     path: 'account',
     loadChildren: './account/account.module#AccountModule'
   },
+  
   {
-    path: 'home',
-    loadChildren: './global/global.module#GlobalModule'
+    path: 'user',
+    loadChildren: './user/user.module#UserModule'
   },
+
   {
     path: '',
-    redirectTo: '',
+    redirectTo: 'account',
     pathMatch: 'full'
   }
 

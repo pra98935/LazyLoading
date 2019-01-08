@@ -12,4 +12,8 @@ export class TopbarComponent implements OnInit {
   ngOnInit() {
   }
 
+  plus(zoomLevel){
+    document.getElementById('scaleImg').style.zoom = zoomLevel;
+  }
+
 }
